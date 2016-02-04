@@ -6,4 +6,10 @@ select Sname, 2015-Sage from student;/*2015减去年龄即为出生年龄 形成
 /*查询全体学生的姓名、出生年份、所在的院系、要求用小字母表示系名*/
 select sname, 'Year of Birth:', 2015 - sage, lower(Sdept) from student;
 
-/**/
+/*重命名*/
+select Sname NAME, 'Yearof Birth:' BIRTH, 2014-Sage BIRTHDAY, Lower(Sdept) Department from Student
+
+/*选择表中若干元组*/
+select Sno from SC
+/*去掉重复行*/
+select DISTINCT Sno from student
